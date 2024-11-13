@@ -1,22 +1,4 @@
-//module fpga_adder (
-//	// addend - 2, 5 bits
-//	input wire [4:0] a,
-//	input wire [4:0] b,
-//	// 7-seg digits - 5, 6 bits (not counting DP)
-//	output wire [6:0] d0,
-//	output wire [6:0] d1,
-//	output wire [6:0] d2,
-//	output wire [6:0] d3,
-//	output wire [6:0] d4,
-//	// 7-seg - negative sign
-//	output wire [6:0] neg
-//);
-//
-//	wire [7:0] add_result; // stores addition result
-//	Add5 add_5 ( .a(a), .b(b), .res(add_result) ); // calculate addition
-//	Bin2Dec bin_2_dec ( add_result, d0, d1, d2, d3, d4, neg ); // display value
-//
-//endmodule
+// Main module
 
 module fpga_adder (
 	input wire [3:0] a,
